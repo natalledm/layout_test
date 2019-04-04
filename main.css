@@ -1,0 +1,167 @@
+body {
+    font-family: Signika;
+    background-color: #fff1f5;
+}
+
+.titles {
+    color: rgb(238, 36, 97);
+}
+
+/* header */
+
+.header-container {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.logo {
+    padding: 10px;
+}
+
+h1 {
+    font-weight: 600;
+    height: 100px;
+    margin: 0;
+    flex-grow: 2;
+    padding-top: 30px;
+    line-height: 0.8em;
+}
+
+.ampersand {
+    font-weight: 300;
+}
+
+nav {
+    list-style-type: none;
+    margin: 0;
+    padding-right: 20px;
+    align-self: center;
+}
+
+nav li {
+    display: inline-block;
+    padding: 20px;
+    background-color: rgb(238, 36, 97);
+    border-radius: 50%;
+    color: white;
+}
+
+/* Under carosel */
+.second-title {
+    font-weight: 700;
+    color: #b8053b;
+    font-size: xx-large;
+}
+
+.option {
+    font-size: x-large;
+    padding-bottom: 0;
+    margin-block-end: 0;
+}
+
+.text-option {
+    margin-block-start: 0;
+    width: 80%;
+}
+
+.row {
+    display: flex;
+}
+
+.column {
+    flex-direction: column;
+    flex-grow: 1;
+    width: 35%;
+    padding: 10px;
+}
+
+.list-sweets {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.list-sweets li i {
+    color:  rgb(238, 36, 97);
+    padding-right: 10px;
+}
+
+.button-see-more {
+    color: white;
+    background-color: rgb(238, 36, 97);
+    border-radius: 25px;
+    width: 100px;
+    height: 36px;
+}
+
+.button-see-more i {
+    color: white;
+    padding-right: 5px;
+}
+
+.button-and-text {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+}
+
+.button-test {
+    font-size: 24px;
+    color: white;
+    background-color: rgb(238, 36, 97);
+    border-radius: 50px;
+    width: 275px;
+    height: 79px;
+    padding: 10px;
+}
+
+.button-test i {
+    color: rgb(238, 36, 97);
+    border-radius: 50%;
+    background-color: white;
+    padding: 10px;
+}
+
+.text-motivation {
+    font-style: italic;
+    padding-left: 20px;
+    font-weight: 300;
+    font-size: x-large;
+    margin-block-start: 0.5em;
+}
+
+/* Footer */
+
+.footer {
+    background-color: rgb(238, 36, 97);
+    color: white;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer p {
+    font-style: italic;
+    flex-grow: 1;
+}
+
+a {
+    color: white;
+}
+
+.contact-us {
+    align-self: flex-end;
+    padding-right: 20px;
+}
+
+.contact-us li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px;
+}
+
+.contact-us i {
+    background-color: white;
+    border-radius: 50%;
+    color: rgb(238, 36, 97);
+    padding: 10px;
+}
