@@ -15,31 +15,37 @@ body {
 }
 
 .logo {
-    padding: 10px;
+    padding: 0.6em;
 }
 
-h1 {
+.header-title {
     font-weight: 600;
     height: 100px;
     margin: 0;
     flex-grow: 2;
     line-height: 0.8em;
+    padding-top: 0.6em;
 }
 
 .ampersand {
     font-weight: 300;
+    padding-right: 0.1em;
 }
 
 nav {
     list-style-type: none;
-    margin: 0;
+    width: 300px;
     padding-right: 20px;
     align-self: center;
 }
 
+nav ul {
+    padding-inline-start: 0;
+}
+
 nav li {
     display: inline-block;
-    padding: 20px;
+    padding: 5%;
     background-color: rgb(238, 36, 97);
     border-radius: 50%;
 }
@@ -181,4 +187,10 @@ nav li a {
     border-radius: 50%;
     color: rgb(238, 36, 97);
     padding: 10px;
+}
+
+/* Login modal */
+
+.form-login {
+    font-family: Signika;
 }

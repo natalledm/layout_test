@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="shortcut icon" type="image/x-icon" href="static/favicon.ico">
     <title>Cupcakes & Cookies</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
     <link rel="stylesheet" type="text/css" media="screen" href="main.css">
     <link href="https://fonts.googleapis.com/css?family=Signika:300,400,600,700" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
@@ -15,23 +16,49 @@
     <header>
         <div class="header-container">
             <img src="static/logo.jpg" alt="logo" class="logo">
-            <h1 class="titles">CUPCAKES </br><span class="ampersand">&</span> COOKIES</h1>
+            <h1 class="header-title titles">CUPCAKES</br><span class="ampersand">&</span>COOKIES</h1>
             <nav>
                 <ul>
                     <li><a href="#"><i class="fas fa-home fa-fw"></i></a></li>
                     <li><a href="#"><i class="fas fa-location-arrow fa-fw"></i></a></li>
                     <li><a href="#"><i class="fas fa-bars fa-fw"></i></a></li>
                     <li><a href="#"><i class="fas fa-question fa-fw"></i></a></li>
-                    <li><a href="#"><i class="fas fa-user-alt fa-fw"></i></a></li>
+                    <li><a href="#"><i class="fas fa-user-alt fa-fw" data-toggle="modal" data-target="#exampleModal"></i></a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
+    <!-- Modal + Login form -->
+
+    <div class="modal fade right" id="exampleModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title form-login">Login</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form class="form-login">
+                        <label for="email"><b>Email</b></label></br>
+                        <input type="text" name="email" required></br>
+                        <label for="psw"><b>Senha</b></label></br>
+                        <input type="password" name="psw" required>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Entrar</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Beginning of Carousel -->
 
     <div class="carousel-container">
-        <!-- <div class="w-75 h-75"></div> -->
             <div class="carousel slide" id="carouselExample" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#carouselExample" data-slide-to="0" class="active"></li>
@@ -66,7 +93,6 @@
                     <span class="sr-only">Next</span>
                 </a>
             </div>
-        <!-- </div> -->
     </div>
 
     <!-- End of Carousel -->
@@ -135,9 +161,10 @@
     </div> 
 
 
-    <script src="main.js"></script>
+    
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
 </body>
 </html>
